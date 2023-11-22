@@ -1,0 +1,467 @@
+/* outfit-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/outfit-v11-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* outfit-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* outfit-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* outfit-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/outfit-v11-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #FFFF;
+}
+
+body{
+  font-family: 'Outfit';
+  margin: 0; 
+}
+
+li {
+  list-style-type: none; /*remove points*/
+}
+
+.wrapper{ 
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* header styles start*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*background-color:  rgba(0, 0, 0, 0.45);*/
+}
+
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+ 
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item{
+  margin-right: 72px;
+}
+
+.header_item:last-child{
+  margin-right: 0;
+}
+
+.header_link{
+  font-size: 22px;
+  line-height: normal;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+  color:#DBFF00;
+}
+/*header styles end*/
+
+
+/*intro styles start*/
+.intro{
+  height: 110vh;
+  background: url(../img/background/bg1.png) no-repeat;
+  background-size: cover;
+  padding-top: 570px;
+}
+
+.intro_wrapper{
+  width: 1781px;
+  height: 352px;
+}
+
+.intro_title{
+  max-width: 1100px;
+  height: 64px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+  color: #DBFF00;
+  margin: 0;
+}
+
+.intro_subtitle{
+  color: #fff;
+  max-width: 860px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sign_up_button{
+  width: 730px;
+  height: 45px;
+}
+
+.sign_up_click{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign_up_click:hover, .sign_up_click:focus, .sign_up_click:active{
+  color: #03FFF0;
+}
+/*intro styles end*/
+
+
+/*form style start*/
+.form_wrapper{
+  margin-top: -268px;
+  margin-left: 1130px;
+  width: 679px;
+  height: 342px;
+  background: rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
+}
+
+.form_wrapper h1{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  padding-left: 26px;
+  padding-top: 13px;
+  margin-bottom: 10px;
+}
+
+.form_wrapper .input_box {
+  margin-bottom: 29px;
+  width: 650px;
+  height: 70px;
+  padding-left: 26px;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid rgba(254, 254, 254, 0.18);
+  outline: none;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: normal;
+  text-align: left;
+  padding-left: 23px; ;
+}
+
+.input_box input:focus{
+  border-color:rgba(219, 255, 0, 0.49);
+}
+
+.form_wrapper .submit .btn {
+  margin-left: 26px;
+  width: 307px;
+  height: 62px;
+}
+
+.form_wrapper .btn {
+  width: 307px;
+  height: 62px;
+  background-color: #DBFF00;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  transition: .3s;
+}
+
+.form_wrapper .btn:hover {
+  background-color:#FF00F5;
+}
+
+.frgt {
+  margin-left: 86px;
+  max-width: 164px;
+  max-height: 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.frgt:hover {
+  color: #DBFF00;
+  text-decoration: underline 1px;
+}
+/*form style end*/
+
+
+/*second page style start*/
+.sec_page_wrap{
+  max-width: 1979px;
+  height: 1030px;
+  background-color: #0B061A;
+  margin: 0 auto;
+}
+
+.sec_page_wrap h2{
+  margin: 0;
+  padding-top: 215px;
+  margin-left: 52px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+  color:#DBFF00;
+}
+
+.sec_subtitle {
+  margin: 0;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  margin-left: 52px;
+  max-width: 1412px;
+  height: 60px;
+}
+
+/*games styles start*/
+.games {
+  width: 796px;
+  height: 600px;
+}
+
+.select {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 52px;
+  margin-top: 35px;
+}
+
+.game_chooser {
+  width: 796px;
+  height: 494px;
+}
+
+.valorant {
+  display: flex;
+  width: 800px;
+  height: 190px;
+  border-radius: 4px;
+  transition: .2s;
+  margin-bottom: 10px;
+}
+
+.valorant:hover {
+  background-color: rgba(250, 0, 255, 0.12);
+}
+
+.valorant_link {
+  margin-left: 57px;
+  text-decoration: none;
+}
+
+.valorant_pic {
+  padding-top: 7px;
+}
+
+.valorant_name {
+  width: 96px;
+  height: 27px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 26.55px;
+}
+
+.valorant_info {
+  padding-left: 55px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.apex_legends {
+  display: flex;
+  width: 800px;
+  height: 188px;
+  border-radius: 4px;
+  transition: .2s;
+  margin-bottom: 15px;
+}
+
+.apex_legends:hover {
+  background-color: rgba(250, 0, 255, 0.12);
+}
+
+.apex_link {
+  margin-left: 57px;
+  text-decoration: none;
+}
+
+.apex_pic {
+  padding-top: 5px;
+  padding-left: 19px;
+}
+
+.apex_legends_name {
+  width: 151px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 12px;
+}
+
+.apex_info {
+  padding-left: 44px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lol {
+  display: flex;
+  width: 800px;
+  height: 140px;
+  border-radius: 4px;
+  transition: .2s;
+}
+
+.lol:hover{
+  background-color: rgba(250, 0, 255, 0.12);
+}
+
+.lol_link {
+  margin-left: 43px;
+  text-decoration: none;
+}
+
+.lol_pic {
+  padding-top: 12px;
+  padding-left: 15px;
+}
+
+.lol_name {
+  width: 40px;
+  height: 30px;
+  margin-left: 77px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lol_info {
+  padding-left: 23px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.official_site {
+ /*color: #03FFF0;*/
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.official_site:hover {
+  color: #03FFF0;
+  text-decoration: underline;
+}
+
+/*games styles end*/
+
+
+/*feedback styles start*/
+.feedback_text {
+  max-width: 1100px;
+  margin-left: 990px;
+}
+
+.feedback_title { /*h3*/
+  margin: 0;
+  color: #FF00F5;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.feedback_subtitle { /*p*/
+  margin-top: 5px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.feedback_links_list {
+  flex-wrap: wrap;
+}
+
+.feedback_item {
+  display: inline;
+  margin-right: 23.07px;
+  border: none;
+}
+/*feedback styles end*/
+
+.ai_img { /*decorative*/
+  margin-left: 990px;
+  margin-top: -568px;
+}
