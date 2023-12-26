@@ -52,25 +52,33 @@
 
 
                     <div class="form_wrapper">
-                        <form id="form" action="/">
+                        <form id="form" action="form.php" method="post">
                             <h1>Sign in</h1>
+
+                            <div class="input_box">
+                                <label for="name_field"></label>
+                                <input id="name_field" name="username" type="text" placeholder="Username" required>
+                            </div>
                             <div class="input_control">
                                 <div class="input_box">
-                                    <input id="email_field" type="email" placeholder="Email" required>
+                                    <label for="email_field"></label>
+                                    <input id="email_field" name="email" type="email" placeholder="Email" required>
                                     <div class="error"></div>
                                 </div>
                             </div>
                             <div class="input_control">
                                 <div class="input_box">
-                                    <input id="password_field" type="password" placeholder="Password" required>
+                                    <label for="password_field"></label>
+                                    <input id="password_field" name="password" type="password" placeholder="Password" required>
                                     <div class="error"></div>
                                 </div>
                             </div>
                             <div class="submit">
-                                <button type="submit" class="btn">Sign in</button>
+                                <button type="submit" name="submit" class="btn">Sign in</button>
                                 <a href="#" class="frgt">Forgot password?</a>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -89,7 +97,7 @@
                     <div class="game_chooser">
                         <ul class="chooser" id="game-chooser">
 
-                            <li class="game valorant" data-post-id="valorant1">
+                            <li class="game valorant">
                                 <a href="#" class="valorant_link">
                                     <img class="valorant_pic" src="./img/svg/Valorant_logo_-_pink_color_version_(cropped) 1.svg" alt="valorant">
                                     <p class="valorant_name">Valorant</p>
