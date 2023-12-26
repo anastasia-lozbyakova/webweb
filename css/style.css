@@ -74,7 +74,7 @@ li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
+  padding-top: 12px;
  
 }
 
@@ -241,20 +241,63 @@ li {
   color: #DBFF00;
   text-decoration: underline 1px;
 }
+
 /*form style end*/
 
 
 /*second page style start*/
+#theme_toggle {
+  margin-left: 1517px;
+  padding: 0;
+
+  background-color: #DBFF00;
+  border: none;
+  width: 161px;
+  height: 47px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  transition: .3s;
+}
+
+#theme_toggle:hover {
+  background-color: rgba(173, 195, 36, 1);
+}
+
+:root {
+  --bg-color: #0B061A;
+  --hover-color: rgba(250, 0, 255, 0.12);
+}
+
+.light_theme{
+  --bg-color: #6A5598;
+  --hover-color: rgba(255, 0, 199, 0.37);
+}
+
+
+
+
+
+
+
+
+
 .sec_page_wrap{
   max-width: 1979px;
-  height: 1030px;
-  background-color: #0B061A;
+  height: 1070px;
+  background-color: var(--bg-color);
   margin: 0 auto;
 }
 
 .sec_page_wrap h2{
+  width: 1127px;
+  display: flex;
   margin: 0;
-  padding-top: 215px;
+  padding-top: 224px;
   margin-left: 52px;
   font-size: 64px;
   font-weight: 600;
@@ -273,6 +316,7 @@ li {
   max-width: 1412px;
   height: 60px;
 }
+
 
 /*games styles start*/
 .games {
@@ -304,7 +348,7 @@ li {
 }
 
 .valorant:hover {
-  background-color: rgba(250, 0, 255, 0.12);
+  background-color: var(--hover-color);
 }
 
 .valorant_link {
@@ -343,8 +387,8 @@ li {
   margin-bottom: 15px;
 }
 
-.apex_legends:hover {
-  background-color: rgba(250, 0, 255, 0.12);
+.apex_legends:hover{
+  background-color: var(--hover-color);
 }
 
 .apex_link {
@@ -382,7 +426,7 @@ li {
 }
 
 .lol:hover{
-  background-color: rgba(250, 0, 255, 0.12);
+  background-color: var(--hover-color);
 }
 
 .lol_link {

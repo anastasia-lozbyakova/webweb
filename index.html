@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PALFINDER</title>
+    <script defer src="./main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head> 
 <body>
@@ -18,9 +19,6 @@
                 </div>
                 <nav class="header_nav">
                     <ul class="header_list">
-                        <!--<li class="header_item">
-                            <a href="#!" class="header_link">Find!</a>
-                        </li>-->
                         <li class="header_item">
                             <a href="#!" class="header_link">Menu</a>
                         </li>
@@ -51,20 +49,28 @@
                     <a href="#" class="sign_up_click">First time? Click here to sign up for free</a> <!--<br>
                     <a href="https://www.artstation.com/artwork/ZGnl80" class="background_author">Author of the background on ArtStation</a>-->
 
-                    <div class="form_wrapper">
-                        <h1>Sign in</h1>
-                        <div class="input_box">
-                            <input type="text" placeholder="Email" required>
-                        </div>
-                        <div class="input_box">
-                            <input type="password" placeholder="Password" required>
-                        </div>
-                        <div class="submit">
-                            <button type="submit" class="btn">Sign in</button>
-                            <a href="#" class="frgt">Forgot password?</a>
-                        </div>
-                    </div>
 
+                    <div class="form_wrapper">
+                        <form id="form" action="/">
+                            <h1>Sign in</h1>
+                            <div class="input_control">
+                                <div class="input_box">
+                                    <input id="email_field" type="email" placeholder="Email" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                            <div class="input_control">
+                                <div class="input_box">
+                                    <input id="password_field" type="password" placeholder="Password" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <button type="submit" class="btn">Sign in</button>
+                                <a href="#" class="frgt">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,6 +80,8 @@
                 <h2>FOR TOURNAMENTS AND FOR CHILL</h2>
                 <p class="sec_subtitle">The main idea of PALFINDER is to help  gamers find a company to play with. Don’t want to play alone tonight? You need help in game?
                     Want to play ranked games with good players? Or just want to find friends? Try PALFINDER!</p>
+
+                    <button id="theme_toggle" class="theme_toggle" aria-label="theme_toggle">Switch</button>
 
                 <div class="games">
                     <h3 class="select">Select a game:</h3>
@@ -140,5 +148,6 @@
             </div>
         </section>
     </main>
+
 </body>
 </html>
