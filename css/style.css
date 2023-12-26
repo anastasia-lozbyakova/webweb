@@ -74,7 +74,7 @@ li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 5px;
  
 }
 
@@ -274,21 +274,14 @@ li {
 }
 
 .light_theme{
-  --bg-color: #6A5598;
-  --hover-color: rgba(255, 0, 199, 0.37);
+  --bg-color:#864F8F;
+  --hover-color: rgba(65, 198, 190, 0.32);
 }
-
-
-
-
-
-
-
 
 
 .sec_page_wrap{
   max-width: 1979px;
-  height: 1070px;
+  height: 1090px;
   background-color: var(--bg-color);
   margin: 0 auto;
 }
@@ -371,11 +364,14 @@ li {
 }
 
 .valorant_info {
+  width: 500px;
+  height: 140px;
   padding-left: 55px;
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
 }
+
 
 
 .apex_legends {
@@ -411,6 +407,8 @@ li {
 }
 
 .apex_info {
+  width: 500px;
+  height: 140px;
   padding-left: 44px;
   font-size: 24px;
   font-weight: 400;
@@ -420,7 +418,7 @@ li {
 .lol {
   display: flex;
   width: 800px;
-  height: 140px;
+  height: 150px;
   border-radius: 4px;
   transition: .2s;
 }
@@ -435,7 +433,7 @@ li {
 }
 
 .lol_pic {
-  padding-top: 12px;
+  padding-top: 20px;
   padding-left: 15px;
 }
 
@@ -449,6 +447,8 @@ li {
 }
 
 .lol_info {
+  width: 500px;
+  height: 140px;
   padding-left: 23px;
   font-size: 24px;
   font-weight: 400;
@@ -467,6 +467,34 @@ li {
   color: #03FFF0;
   text-decoration: underline;
 }
+
+#remove-li {
+  background: none;
+  margin-top: 65px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+
+.material-symbols-outlined {
+  color: #fff;
+  
+  cursor: pointer;
+  transition: 0.2s;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+  color:darkgrey;
+}
+
 
 /*games styles end*/
 

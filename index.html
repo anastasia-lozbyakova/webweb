@@ -6,6 +6,7 @@
     <title>PALFINDER</title>
     <script defer src="./main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--bin icon-->
 </head> 
 <body>
 
@@ -86,8 +87,9 @@
                 <div class="games">
                     <h3 class="select">Select a game:</h3>
                     <div class="game_chooser">
-                        <ul class="chooser">
-                            <li class="valorant">
+                        <ul class="chooser" id="game-chooser">
+
+                            <li class="game valorant" data-post-id="valorant1">
                                 <a href="#" class="valorant_link">
                                     <img class="valorant_pic" src="./img/svg/Valorant_logo_-_pink_color_version_(cropped) 1.svg" alt="valorant">
                                     <p class="valorant_name">Valorant</p>
@@ -96,26 +98,37 @@
                                     <br> by Riot Games. <br>
                                     More: <a class="official_site" href="https://playvalorant.com/en-gb/">Valorant official site</a>
                                 </p>
-                            </li>
+                                <button onclick="deleteGame()" id="remove-li">
+                                    <span class="material-symbols-outlined" id="delete-lol">delete</span>
+                                </button>                            </li>
                             
-                            <li class="apex_legends">
+                            <li class="game apex_legends" data-post-id="apex2">
                                 <a href="#" class="apex_link">
                                     <img class="apex_pic" src="./img/svg/logo-Apex-Legends 1.svg" alt="apex_legends">
                                     <p class="apex_legends_name">Apex Legends</p>
                                 </a>
                                 <p class="apex_info">Cross-platform free-to-play Hero shooter <br>
                                     by EA Games. <br>
-                                    More: <a class="official_site" href="https://www.ea.com/games/apex-legends">Apex Legends official site</a></p>
-                            </li>
-                            <li class="lol">
+                                    More: <a class="official_site" href="https://www.ea.com/games/apex-legends">Apex Legends official site</a>
+                                </p>
+                                <button onclick="deleteGame()" id="remove-li">
+                                    <span class="material-symbols-outlined" id="delete-lol">delete</span>
+                                </button>                            </li>
+
+                            <li class="game lol" data-post-id="lol3">
                                 <a href="#" class="lol_link">
                                     <img class="lol_pic" src="./img/svg/League_of_Legends_2019_vector 1.svg" alt="league_of_legends">
                                     <p class="lol_name">LoL</p>
                                 </a>
                                 <p class="lol_info">A team-based game with over 140 champions <br>
                                     by Riot Games. <br>
-                                    More: <a class="official_site" href="https://www.leagueoflegends.com/en-gb/">League of Legends official site</a></p>
+                                    More: <a class="official_site" href="https://www.leagueoflegends.com/en-gb/">League of Legends official site</a>
+                                </p>
+                                <button onclick="deleteGame()" id="remove-li">
+                                    <span class="material-symbols-outlined" id="delete-lol">delete</span>
+                                </button>
                             </li>
+
                         </ul>
                     </div>
                 </div>

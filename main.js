@@ -88,3 +88,10 @@ lightModeToggle.addEventListener('click', () => {
     }
 });
 //theme changer end
+
+//delete DOM element
+function deleteGame() {
+    var ul = document.getElementById('game-chooser');
+    ul.removeChild(ul.firstElementChild);
+}
+//delete end
